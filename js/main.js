@@ -21,8 +21,8 @@ const ten = (str, veces) => {
   }
 };
 
-const nueva = terms => {
-  for (const item of terms) {
+const nueva = arr => {
+  for (const item of arr) {
     ten(item.text, item.total);
   }
 };
