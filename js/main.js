@@ -15,16 +15,16 @@ const terms = [
   }
 ];
 
-const ten = (str, veces) => {
-  for (let i = 0; i < veces; i++) {
+const writeThisWord = (str, n) => {
+  for (let i = 0; i < n; i++) {
     console.log(str);
   }
 };
 
-const nueva = arr => {
+const writeMe = arr => {
   for (const item of arr) {
-    ten(item.text, item.total);
+    writeThisWord(item.text, item.total);
   }
 };
 
-nueva(terms);
+writeMe(terms);
