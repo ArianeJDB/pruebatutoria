@@ -6,7 +6,7 @@ const api =
 fetch(api)
   .then(response => response.json())
   .then(data => {
-    console.log(writeMe(data.results));
+    writeMe(data.results);
   });
 
 const writeThisWord = (str, n) => {
